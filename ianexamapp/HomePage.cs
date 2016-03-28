@@ -8,6 +8,9 @@ namespace ianexamapp
     {
         public HomePage()
         {
+            //remove navigation bar
+            NavigationPage.SetHasNavigationBar(this, false);
+
             //Set background image
             var backgroundImage = new Image { Source = ImageSource.FromResource("ianexamapp.Images.background.jpg") };
             backgroundImage.Aspect = Aspect.AspectFill;
