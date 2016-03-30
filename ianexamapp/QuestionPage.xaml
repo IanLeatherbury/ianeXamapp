@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ianexamapp.QuestionPage"
+             Title="eXam"
+             Padding="15, 15, 15, 15"
+             BackgroundColor="Gray">
+  <Grid>
+    
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+
+    <Label Text="My Label"
+             Grid.Row="0" Grid.Column="0" />
+
+    <Button Text="True" BackgroundColor="Blue" TextColor="White" 
+            Grid.Row="1" Grid.Column="0"/>
+
+    <Button Text="False" BackgroundColor="Red" TextColor="White"
+            Grid.Row="1" Grid.Column="1"/>
+
+    <Label Text="Your answer was..."
+             Grid.Row="2" Grid.Column="0" />
+
+    <Button Text="Next" BackgroundColor="Green" TextColor="White"
+            Grid.Row="3" Grid.Column="1"/>
+  </Grid>
+</ContentPage>
