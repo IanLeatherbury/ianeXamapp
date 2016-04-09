@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using eXam;
+using Plugin.Connectivity;
 using Xamarin.Forms;
 
 namespace ianexamapp
@@ -28,6 +30,8 @@ namespace ianexamapp
 
 		async protected override void OnStart()
 		{
+			Debug.WriteLine("Connection status" + CrossConnectivity.Current.IsConnected);
+
 			var fileHelper = DependencyService.Get<IFileHelper>();
 
 			string questionText = await fileHelper.LoadLocalFileAsync("cachedquestions.xml");
